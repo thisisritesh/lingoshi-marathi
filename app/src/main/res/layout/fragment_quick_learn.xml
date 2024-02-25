@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.home.quicklearn.QuickLearnFragment">
+
+    <TextView
+        android:id="@+id/screen_heading_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_bold"
+        android:text="@string/quick_learn"
+        android:textColor="@color/primary_text_color"
+        android:textSize="32sp"
+        android:layout_margin="@dimen/common_margin"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/empty_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/screen_heading_tv">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            app:lottie_loop="false"
+            app:lottie_autoPlay="true"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            app:lottie_rawRes="@raw/animation_empty" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/placeholder_text_short"
+            android:background="@android:color/transparent"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="24dp"
+            android:gravity="center"
+            android:textColor="@color/secondary_text_color"/>
+
+        <TextView
+            android:id="@+id/go_to_lessons_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/secondary_btn_bg_small"
+            android:text="Go to lessons"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:textColor="@color/primary_color"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/quick_learn_rv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="8dp"
+        android:background="@android:color/transparent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/screen_heading_tv" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:indeterminate="true"
+        app:indicatorColor="@color/primary_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/screen_heading_tv"
+        app:trackColor="@color/card_color" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

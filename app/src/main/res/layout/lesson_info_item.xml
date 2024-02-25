@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_color">
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/LLA.LearningHeading"
+        android:layout_margin="@dimen/common_margin"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/info_image_view"
+        android:layout_width="0dp"
+        android:layout_height="180dp"
+        android:src="@drawable/placeholder_enabled"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/LLA.RoundedCornersImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_tv"
+        android:layout_marginTop="32dp"
+        android:layout_marginHorizontal="@dimen/common_margin"/>
+
+    <TextView
+        android:id="@+id/word_phrase_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="@dimen/common_margin"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Word/Phrase"
+        android:textColor="@color/primary_color"
+        android:textSize="20sp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info_image_view" />
+
+    <TextView
+        android:id="@+id/speech_text_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="@dimen/common_margin"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="Word/Phrase"
+        android:textColor="@color/secondary_text_color"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/word_phrase_tv" />
+
+
+    <ImageView
+        android:id="@+id/play_pause_image_btn"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/play_solid"
+        app:layout_constraintBottom_toBottomOf="@+id/speech_text_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/word_phrase_tv"
+        app:tint="@color/primary_color"
+        android:layout_marginEnd="@dimen/common_margin"/>
+
+    <TextView
+        android:id="@+id/meaning_text_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="@dimen/common_margin"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="Word/Phrase"
+        android:textColor="@color/secondary_text_color"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/speech_text_tv" />
+
+    <TextView
+        android:id="@+id/learn_more_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/secondary_btn_bg_small"
+        android:fontFamily="@font/nunito_semibold"
+        android:gravity="center"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        android:text="Learn more"
+        android:visibility="gone"
+        android:layout_marginVertical="24dp"
+        android:layout_marginHorizontal="@dimen/common_margin"
+        android:textColor="@color/primary_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/meaning_text_tv" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

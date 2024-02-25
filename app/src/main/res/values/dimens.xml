@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_text_btn">20sp</dimen>
+    <dimen name="body_text_size">16sp</dimen>
+    <dimen name="btn_txt_size">18sp</dimen>
+    <dimen name="button_corner">16dp</dimen>
+    <dimen name="common_margin">16dp</dimen>
+    <dimen name="xtra_margin">24dp</dimen>
+    <dimen name="heading_text_size">28sp</dimen>
+    <dimen name="circular_progress_indicator_size">90dp</dimen>
+    <dimen name="lesson_image_size">64dp</dimen>
+    <dimen name="small_button_corner_size">8dp</dimen>
+</resources>

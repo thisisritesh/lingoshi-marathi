@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">Lingoshi Marathi</string>
+    <string name="i_already_have_an_account">I already have an account</string>
+    <string name="get_started">Get started</string>
+    <string name="placeholder_text_short">Lorem ipsum dolor sit amet, consectetur adipiscing eli dolore magna aliqua.</string>
+    <string name="placeholder_text_long">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+    <string name="continue_">Continue</string>
+    <string name="lessons">Lessons</string>
+    <string name="revision">Revision</string>
+    <string name="insights">Insights</string>
+    <string name="account">More</string>
+    <string name="continue_with_google">Continue with Google</string>
+
+    <string name="onboarding_1">Learn Marathi like a fun</string>
+    <string name="onboarding_2">Interactive lessons</string>
+    <string name="onboarding_3">Track your progress</string>
+    <string name="onboarding_4">Complete daily goals and learn new vocab &amp; phrases in Marathi</string>
+
+
+    <!--    Credentials-->
+    <string name="web_client_id">6089150688-tj379ntgra4rg4a3uvmj4auqtv6b36d7.apps.googleusercontent.com</string>
+    <string name="sun">SUN</string>
+    <string name="mon">Mon</string>
+    <string name="tue">Tue</string>
+    <string name="wed">Wed</string>
+    <string name="thu">Thu</string>
+    <string name="fri">Fri</string>
+    <string name="sat">Sat</string>
+    <string name="login_to_your_account_nto_save_your_progress">Login to your account\nto save progress</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login">Login</string>
+    <string name="daily_goal">Daily Goal</string>
+    <string name="app_tour">App Tour</string>
+    <string name="app_settings">App Settings</string>
+    <string name="rate_the_app">Rate the App</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="more_apps">More Apps</string>
+    <string name="about_us">About Us</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="log_out">Log out</string>
+    <string name="next">Next</string>
+    <string name="take_a_quiz">Take a Quiz</string>
+    <string name="lesson_number">Lesson %1$s</string>
+    <string name="lesson_completed">Lesson Completed!</string>
+    <string name="home">Home</string>
+    <string name="level_progress">Level Progress</string>
+    <string name="accuracy">Accuracy</string>
+    <string name="learnt_items">Learnt Items</string>
+    <string name="got_it">Got it</string>
+    <string name="incorrect">Incorrect</string>
+    <string name="correct_answer">Correct Answer:</string>
+    <string name="quick_learn">Quick Learn</string>
+    <string name="voice_not_available">Voice not available!</string>
+    <string name="coming_soon">Coming soon!</string>
+    <string name="correct_1">Correct!</string>
+    <string name="correct_2">Nice!</string>
+    <string name="correct_3">Amazing!</string>
+    <string name="correct_4">Wonderful!</string>
+    <string name="correct_5">Awesome!</string>
+    <string name="correct_6">Outstanding!</string>
+    <string name="coming_soon_des">We are currently developing this feature. This will be available soon.</string>
+    <string name="okay">Okay!</string>
+    <string name="no_audio_des">We are sorry for the inconvenience, we will add the audio file for this.</string>
+    <string name="quitting_learning">Quitting learning?</string>
+    <string name="quitting_learning_des">"Your progress won't saved. Are you sure you want to quit the lesson? "</string>
+    <string name="no">No</string>
+    <string name="please_complete_the_previous_lesson_first">Please complete the previous lesson first!</string>
+    <string name="go_to_lessons">Go to lessons</string>
+    <string name="revision_des">The lessons you will learn will appear here. Please complete a lesson first!</string>
+    <string name="after_learn_des">Excellent! You have completed the lesson with %1$s accuracy. Keep up the great work!</string>
+</resources>

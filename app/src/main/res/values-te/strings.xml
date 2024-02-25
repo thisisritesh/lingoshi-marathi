@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lingoshi Marathi</string>
+    <string name="i_already_have_an_account">I already have an account</string>
+    <string name="get_started">ప్రారంభించండి</string>
+    <string name="placeholder_text_short">Lorem ipsum dolor sit amet, consectetur adipiscing eli dolore magna aliqua.</string>
+    <string name="placeholder_text_long">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+    <string name="continue_">కొనసాగించు</string>
+    <string name="lessons">పాఠాలు</string>
+    <string name="revision">పునర్విమర్శ</string>
+    <string name="insights">Insights</string>
+    <string name="account">మరింత</string>
+    <string name="continue_with_google">Continue with Google</string>
+
+    <string name="onboarding_1">Learn Marathi like a fun</string>
+    <string name="onboarding_2">Interactive lessons</string>
+    <string name="onboarding_3">Track your progress</string>
+    <string name="onboarding_4">Complete daily goals and learn new vocab &amp; phrases in Marathi</string>
+
+    <!--    Credentials-->
+    <string name="web_client_id">6089150688-tj379ntgra4rg4a3uvmj4auqtv6b36d7.apps.googleusercontent.com</string>
+    <string name="sun">SUN</string>
+    <string name="mon">Mon</string>
+    <string name="tue">Tue</string>
+    <string name="wed">Wed</string>
+    <string name="thu">Thu</string>
+    <string name="fri">Fri</string>
+    <string name="sat">Sat</string>
+    <string name="login_to_your_account_nto_save_your_progress">Login to your account\nto save progress</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login">Login</string>
+    <string name="daily_goal">రోజువారీ లక్ష్యం</string>
+    <string name="app_tour">అనువర్తన పర్యటన</string>
+    <string name="app_settings">సెట్టింగ్‌లు</string>
+    <string name="rate_the_app">యాప్‌ను రేట్ చేయండి</string>
+    <string name="privacy_policy">గోప్యతా విధానం</string>
+    <string name="more_apps">మరిన్ని యాప్‌లు</string>
+    <string name="about_us">మా గురించి</string>
+    <string name="contact_us">మమ్మల్ని సంప్రదించండి</string>
+    <string name="log_out">Log out</string>
+    <string name="next">తదుపరి</string>
+    <string name="take_a_quiz">Take a Quiz</string>
+    <string name="lesson_number">పాఠం %1$s</string>
+    <string name="lesson_completed">పాఠం పూర్తయింది!</string>
+    <string name="home">హోమ్</string>
+    <string name="level_progress">పురోగతి</string>
+    <string name="accuracy">ఖచ్చితత్వం</string>
+    <string name="learnt_items">నేర్చుకున్న అంశాలు</string>
+    <string name="got_it">అర్థమైంది</string>
+    <string name="incorrect">సరికాదు</string>
+    <string name="correct_answer">సరైన సమాధానము:</string>
+    <string name="quick_learn">త్వరగా నేర్చుకోండి</string>
+    <string name="voice_not_available">వాయిస్ అందుబాటులో లేదు!</string>
+    <string name="coming_soon">త్వరలో వస్తుంది!</string>
+    <string name="correct_1">సరైన!</string>
+    <string name="correct_2">బాగుంది!</string>
+    <string name="correct_3">అద్భుతమైన!</string>
+    <string name="correct_4">ఆశ్చర్యకరమైన!</string>
+    <string name="correct_5">అద్భుతం!</string>
+    <string name="correct_6">అసాధారణ!</string>
+    <string name="coming_soon_des">మేము ప్రస్తుతం ఈ ఫీచర్‌ను అభివృద్ధి చేస్తున్నాము. ఇది త్వరలో అందుబాటులోకి రానుంది.</string>
+    <string name="okay">సరే!</string>
+    <string name="no_audio_des">అసౌకర్యానికి చింతిస్తున్నాము, దీని కోసం మేము ఆడియో ఫైల్‌ను జోడిస్తాము.</string>
+    <string name="quitting_learning">నేర్చుకోవడం మానేశారా?</string>
+    <string name="quitting_learning_des">మీ పురోగతి సేవ్ చేయబడదు. మీరు ఖచ్చితంగా పాఠం నుండి నిష్క్రమించాలనుకుంటున్నారా?</string>
+    <string name="no">నం</string>
+    <string name="please_complete_the_previous_lesson_first">దయచేసి ముందుగా మునుపటి పాఠాన్ని పూర్తి చేయండి!</string>
+    <string name="go_to_lessons">పాఠాలకు వెళ్లండి</string>
+    <string name="revision_des">మీరు నేర్చుకునే పాఠాలు ఇక్కడ కనిపిస్తాయి. దయచేసి ముందుగా ఒక పాఠాన్ని పూర్తి చేయండి!</string>
+    <string name="after_learn_des">అద్భుతమైన! మీరు %1$s ఖచ్చితత్వంతో పాఠాన్ని పూర్తి చేసారు. గొప్ప పనిని కొనసాగించండి!</string>
+</resources>

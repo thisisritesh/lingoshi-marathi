@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_color"
+    tools:context=".ui.home.lessons.LessonsFragment">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:src="@drawable/toolbar_icon"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/streak_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:layout_marginEnd="@dimen/common_margin"
+        app:layout_constraintBottom_toBottomOf="@+id/heart_parent"
+        app:layout_constraintEnd_toStartOf="@+id/heart_parent"
+        app:layout_constraintTop_toTopOf="@+id/heart_parent">
+
+        <ImageView
+            android:id="@+id/streak_iv"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/fire_solid"
+            app:tint="@color/fire_orange" />
+
+        <TextView
+            android:id="@+id/streak_count_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="3"
+            android:textColor="@color/fire_orange"
+            android:textSize="28sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/heart_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="@dimen/common_margin">
+
+        <ImageView
+            android:id="@+id/heart_iv"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/heart_solid"
+            app:tint="@color/heart_red" />
+
+        <TextView
+            android:id="@+id/lives_count_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:layout_marginStart="4dp"
+            android:textColor="@color/heart_red"
+            android:fontFamily="@font/nunito_semibold"
+            android:textSize="28sp"/>
+
+    </LinearLayout>
+
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/linearProgressIndicator"
+        style="@style/LLA.LoaderHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/common_margin"
+        android:layout_marginTop="@dimen/common_margin"
+        android:progress="30"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/screen_heading_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_margin"
+        android:fontFamily="@font/nunito_bold"
+        android:text="@string/lessons"
+        android:textColor="@color/primary_text_color"
+        android:textSize="32sp"
+        android:layout_marginStart="@dimen/common_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearProgressIndicator" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lessons_rv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/screen_heading_tv" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/view_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="linearProgressIndicator, lessons_rv, screen_heading_tv"/>
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:indeterminate="true"
+        app:indicatorColor="@color/primary_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearProgressIndicator"
+        app:trackColor="@color/card_color" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

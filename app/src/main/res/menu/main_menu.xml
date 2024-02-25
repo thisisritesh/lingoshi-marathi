@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_lessons"
+        android:icon="@drawable/graduation_cap_solid"
+        android:title="@string/lessons" />
+
+    <item
+        android:id="@+id/nav_revision"
+        android:icon="@drawable/repeat_solid"
+        android:title="@string/revision" />
+
+    <item
+        android:id="@+id/nav_quick_learn"
+        android:icon="@drawable/lightbulb_fill1_wght400_grad0_opsz24"
+        android:title="@string/quick_learn" />
+
+    <item
+        android:id="@+id/nav_account"
+        android:icon="@drawable/bars_solid"
+        android:title="@string/account" />
+
+
+</menu>

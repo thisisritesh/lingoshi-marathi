@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.quiz.ReasonFragment">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is your daily study target? 🎯"
+        style="@style/LLA.Heading"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="@dimen/common_margin"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/targets_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginBottom="8dp"/>
+
+</LinearLayout>

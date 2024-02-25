@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginStart="@dimen/common_margin"
+    android:layout_marginEnd="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/circularProgressIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:indicatorSize="@dimen/circular_progress_indicator_size"
+            app:trackColor="@color/disable_component_color"
+            android:rotation="180"
+            android:background="@android:color/transparent"
+            app:indicatorDirectionCircular="clockwise"
+            app:indicatorColor="@color/primary_color"
+            app:trackCornerRadius="16dp"
+            app:trackThickness="6dp"
+            android:layout_marginStart="@dimen/common_margin"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/lesson_image_view"
+            android:layout_width="@dimen/lesson_image_size"
+            android:layout_height="@dimen/lesson_image_size"
+            android:src="@color/fire_orange"
+            app:layout_constraintBottom_toBottomOf="@+id/circularProgressIndicator"
+            app:layout_constraintEnd_toEndOf="@+id/circularProgressIndicator"
+            app:layout_constraintStart_toStartOf="@+id/circularProgressIndicator"
+            app:layout_constraintTop_toTopOf="@+id/circularProgressIndicator"
+            app:shapeAppearanceOverlay="@style/LLA.CircleImageView" />
+
+
+        <TextView
+            android:id="@+id/lesson_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="Talks about food"
+            android:textColor="@color/disable_component_color"
+            android:textSize="20sp"
+            android:layout_marginStart="@dimen/common_margin"
+            app:layout_constraintBottom_toBottomOf="@+id/circularProgressIndicator"
+            app:layout_constraintStart_toEndOf="@+id/circularProgressIndicator"
+            app:layout_constraintTop_toTopOf="@+id/circularProgressIndicator" />
+
+
+        <FrameLayout
+            android:id="@+id/lock_badge"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/lock_bg"
+            app:layout_constraintBottom_toBottomOf="@+id/circularProgressIndicator"
+            app:layout_constraintEnd_toEndOf="@+id/circularProgressIndicator"
+            app:layout_constraintStart_toStartOf="@+id/circularProgressIndicator"
+            app:layout_constraintTop_toBottomOf="@+id/lesson_image_view">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center"
+                android:src="@drawable/lock_solid"
+                android:padding="1dp"
+                android:background="@android:color/transparent"
+                app:tint="@color/bg_color" />
+
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/bottom_rod"
+        android:layout_width="8dp"
+        android:layout_height="30dp"
+        android:src="@drawable/disable_rectangular_bg"
+        android:background="@android:color/transparent"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>

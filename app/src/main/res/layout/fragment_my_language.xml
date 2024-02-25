@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.quiz.MyLanguageFragment">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Which language do you know? 🤔"
+        style="@style/LLA.Heading"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="@dimen/common_margin"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group_languages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <RadioButton
+            android:id="@+id/lang_rb_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/LLA.RadioButton"
+            android:text="English"
+            android:tag="en"
+            android:layout_margin="8dp"/>
+
+
+        <RadioButton
+            android:id="@+id/lang_rb_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/LLA.RadioButton"
+            android:text="Hindi"
+            android:tag="hi"
+            android:layout_margin="8dp"/>
+
+
+        <RadioButton
+            android:id="@+id/lang_rb_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_semibold"
+            style="@style/LLA.RadioButton"
+            android:text="Bangla"
+            android:tag="bn"
+            android:layout_margin="8dp"/>
+
+
+        <RadioButton
+            android:id="@+id/lang_rb_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/LLA.RadioButton"
+            android:text="Telugu"
+            android:tag="te"
+            android:layout_margin="8dp"/>
+
+
+    </RadioGroup>
+
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "6089150688",
+    "project_id": "marathi-learning-app-acb5e",
+    "storage_bucket": "marathi-learning-app-acb5e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:6089150688:android:4e52ce6290bd6ea1124085",
+        "android_client_info": {
+          "package_name": "com.riteshmaagadh.lla_base"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "6089150688-tj379ntgra4rg4a3uvmj4auqtv6b36d7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.riteshmaagadh.lla_base",
+            "certificate_hash": "82c7825a784adf3010e33df421837035551583a2"
+          }
+        },
+        {
+          "client_id": "6089150688-o98g0ka6u47imkgv5ik3k7f840v9k317.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXPq-BydaYLQgbJUxyImAJRRlmyDAUjbI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "6089150688-o98g0ka6u47imkgv5ik3k7f840v9k317.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
